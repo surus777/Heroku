@@ -17,7 +17,7 @@ let bot, adminId
 
 
 
-bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true })
+bot = new TelegramBot(process.env.TELEGRAM_TOKEN)
 
 bot.on('message', msg =>
     bot.sendMessage(msg.chat.id, 'Whatever your goal is, you can do it!'))
